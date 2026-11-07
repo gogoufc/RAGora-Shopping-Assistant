@@ -65,8 +65,9 @@ Follow these steps to set up the agent locally.
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/yourusername/amazon-c4-agent.git](https://github.com/yourusername/amazon-c4-agent.git)
+git clone https://github.com/gogoufc/RAGora-Shopping-Assistant.git
 cd amazon-c4-agent
+```
 
 ### 2. Set up Environment
 Choose one of the following methods to set up your Python environment:
@@ -90,12 +91,14 @@ conda create -n c4_agent python=3.10
 
 # Activate the environment
 conda activate c4_agent
+```
 
 ### 3. Install Dependencies
 Regardless of the environment you chose above, install the required packages:
 
 ```bash
 pip install -r requirements.txt
+```
 
 ### 4. Configure API Keys
 Create a `.env` file in the root directory. You can copy the example file, or create a new one:
@@ -103,6 +106,7 @@ Create a `.env` file in the root directory. You can copy the example file, or cr
 ```env
 OPENROUTER_API_KEY=sk-or-v1-your-key-here
 LANGSMITH_API_KEY=your-key-here  # Optional: For tracing
+```
 
 ### 5. Generate/Verify Embeddings
 > **Note:** The FAISS index is required for the search tool to function.
@@ -113,13 +117,14 @@ Check if `data/faiss_index_c4.bin` exists. If not, run the generator (**Warning:
 cd src
 python embeddings_c4.py
 # ⏳ Expect ~8 hours on standard CPU for the full dataset
+```
 
 ### 6. Run the Agent
 Once the index is ready and your environment is active, start the chat interface:
 
 ```bash
 python chat_app.py
-
+```
 ## 💡 Usage Example
 
 Once the app is running, you can interact naturally:
