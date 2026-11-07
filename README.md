@@ -1,4 +1,4 @@
-# 🛒 Amazon C4 Agentic Shopping Assistant
+# 🛒 RAGora Shopping Assistant
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/Orchestration-LangGraph-orange)
@@ -66,7 +66,7 @@ Follow these steps to set up the agent locally.
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/gogoufc/RAGora-Shopping-Assistant.git
-cd amazon-c4-agent
+cd RAGora-Shopping-Assistant
 ```
 
 ### 2. Set up Environment
@@ -148,6 +148,12 @@ Once the app is running, you can interact naturally:
 * **Rate Limits:** The free tier of OpenRouter (GLM-4.5) may hit rate limits (Error 429) during intense testing.
 * **Hardware:** Generating embeddings for 1M products requires approx. **2GB RAM** and meaningful CPU time.
 * **Data Freshness:** The Amazon C4 dataset is static; prices and availability are historical.
+* **Missing Attributes:** The Amazon C4 dataset sample used does not contain pricing, user ratings, or review counts. The agent focuses on qualitative semantic fit rather than numerical or budget-based filtering.
+
+## 📚 Acknowledgments & References
+
+- **Dataset:** This project utilizes the Amazon-C4 dataset introduced by Hou Y. et al. (2024) in *Bridging Language and Items for Retrieval and Recommendation* (arXiv:2403.03952).
+
 
 ## 📄 License
 
