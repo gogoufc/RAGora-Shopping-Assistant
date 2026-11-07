@@ -47,6 +47,7 @@ The system moves beyond simple linear chains. It uses a stateful graph where a *
 │   └── c4_metadata.pkl
 ├── .env                  # 🔑 API Keys configuration
 └── requirements.txt      # 📦 Dependencies
+```
 
 ## 🛠️ Tech Stack
 
@@ -79,6 +80,7 @@ venv\Scripts\activate
 
 # Mac/Linux:
 source venv/bin/activate
+```
 
 **Option B: Using Conda (Recommended)**
 
@@ -122,19 +124,19 @@ python chat_app.py
 
 Once the app is running, you can interact naturally:
 
-> **You:** "I am looking for a gaming laptop under $1200."
+> **You:** "I need a gift for my brother, he is always losing his keys around the house."
 >
 > **Agent:** *(Routes to Search Tool...)*
-> Found 3 relevant items:
-> 1. **ASUS TUF Gaming F15** - $999
->    *High refresh rate screen, robust build.*
-> 2. **Acer Nitro 5** - $850
->    *Budget friendly, good cooling.*
+> Found relevant items:
+> 1. **Tile Mate Tracker**
+>    *A great Bluetooth tracker to help him find his keys quickly.*
+> 2. **Apple AirTag**
+>    *Perfect if he uses the Apple ecosystem.*
 >
-> **You:** "Which one has better battery life?"
+> **You:** "Which one has better compatibility if he uses an Android phone?"
 >
 > **Agent:** *(Uses Memory & Chit-Chat...)*
-> Based on general specs, the ASUS TUF generally offers slightly better battery optimization compared to the Nitro series...
+> Since he uses an Android phone, the Tile Mate is the better option because AirTags are designed primarily for Apple devices...
 
 ## ⚠️ Limitations & Notes
 
